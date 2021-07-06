@@ -1,0 +1,236 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+.head{
+    display: flex;
+    align-items: center;
+    background-color: #5ad5ab;
+    height: 10vh;
+    width: 100%;
+}
+.head h1{
+    text-transform: uppercase;
+}
+.head img{
+    width: 45px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.primary{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 53px;
+}
+.s1{
+    width: 45%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s1 img{
+    width: 80%;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#5ad5ac96;
+    width: 70%;
+    border-radius: 18px;
+    font-size: 20px;
+    height: 50px;
+}
+.titulo img{
+    padding-right: 10px;
+    width: 30px;
+}
+.s2{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    margin-left: 55px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.s2 .item{
+    width: 38%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.s2 .item b{
+    font-weight: bold;
+    color: #e16654;
+}
+
+footer{
+    border-top: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #5ce4b7bd;
+    padding: 0 60px;
+   
+}
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 70%;
+}
+footer ul li{
+    background: #fff;
+    width: 12%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+}
+footer ul li:hover{
+    background: blanchedalmond;
+}
+
+.pokemon img{
+    cursor: pointer;
+    width: 95%;
+}
+footer h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+@media (max-width:950px){
+    .s2 .item{
+        margin: 0 10px;
+    }
+    .s1 .avatar{
+        width: 100%;
+    }
+    footer{
+        padding: 0 40px;
+    }
+    footer ul li{
+        width: 16%;
+    }
+    
+}
+
+@media (max-width:768px){
+    .head{
+        justify-content: center;
+        font-size: 13px;
+    }
+    .head img{
+        width: 38px;
+    }
+    .primary{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .s1{
+        width: 90%;
+    }
+    .s1 .avatar{
+        width: 60%;
+        position: absolute;
+        margin-top: 40px;
+    }
+    .s2{
+        width: 70%;
+        padding-top: 60px;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 0px; 
+        margin: 0px;
+    }
+    footer ul{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0px 0px;
+        padding: 0px;
+    }
+    footer ul li{
+        width: 40%;
+        margin-bottom: 30px;
+        
+    }
+    @media (max-width:705px){
+        .s2{
+            width: 80%;
+        }
+        .s1 .avatar{
+            margin-top: 60px;
+        }
+    }
+    @media (max-width:600px){
+        .s2{
+            margin-top: -50px;
+        }
+    }
+    @media (max-width:500px){
+        .s2{
+            margin-top: -80px;
+        }
+    }
+    @media (max-width:420px){
+        .head{
+            font-size: 10px;
+        }
+        .head img{
+            margin-right: 5px;
+            margin-left: 0;
+            width: 30px;
+        }
+        .titulo .nombre{
+            font-size: 22px;
+        }
+        .titulo img{
+            width: 22pxpx;
+        }
+        .s2{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            margin-top: -110px;
+            padding-top: 40px;
+        }
+        
+        .s2 br{
+            display: none;
+        }
+        footer h2{
+            font-size: 25px;
+        }
+    }
+    @media (max-width:385px){
+        .s2{
+            margin-top: -140px;
+        }
+    }
+    @media (max-width:330px){
+        .s2{
+            margin-top: -155px;
+        }
+        footer h2{
+            font-size: 18px;
+        }
+    }
+}
+
